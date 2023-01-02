@@ -5,23 +5,18 @@ export default function Home({ Posts }) {
   const { id, body } = Posts;
   return (
     <div>
-      <li>
-        <Link href={`/${Posts.title}`}>
-          <div>
-            <Image
-              src="/public/imgs/3.jpg"
-              alt={"jjj"}
-              width={250}
-              height={400}
-            />
-          </div>
-          <div>
-            <h3>{Posts.title}</h3>
-            <p>{Posts.body}</p>
-          </div>
-        </Link>
-      </li>
-      {Posts}
+      <Link href={`/${Posts.title}`}>
+        <div>
+          {/* <Image src="/public/imgs/3.jpg" alt={""} width={250} height={400} /> */}
+          home page
+        </div>
+        <div>
+          {/* <h3>{Posts.title}</h3>
+          <p>{Posts.body}</p> */}
+        </div>
+      </Link>
+
+      {/* {Posts} */}
     </div>
   );
 }
